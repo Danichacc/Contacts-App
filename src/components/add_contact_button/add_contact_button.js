@@ -16,7 +16,7 @@ export class AddContactButton extends React.Component {
     toggleForm() {
         this.setState({
             isShowForm: !this.state.isShowForm,
-        })
+        });
     }
 
     handleSubmit(contact) {
