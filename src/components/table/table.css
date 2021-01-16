@@ -1,0 +1,26 @@
+.contacts-table {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacts-table tr {
+    display: flex;
+    border: 1px solid #000000;
+}
+
+.contacts-table > caption {
+    text-align: start;
+    font-weight: bold;
+}
+
+.contacts-table tr td {
+    min-width: 33.333%;
+    font-family: 'Times New Roman';
+}
+
+.contacts-table tr:nth-child(2) {
+    font-style: italic;
+    font-weight: bold;
+}

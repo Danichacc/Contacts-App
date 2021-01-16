@@ -1,0 +1,39 @@
+.form-contact {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    background-color: #ffffff;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.form-legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-controls > button {
+    width: 102px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-contact label {
+    font-family: 'Times New Roman';
+}
+
+.button-save, .button-cancel {
+    margin-top: 10px;
+    border-radius: 5px;
+}
