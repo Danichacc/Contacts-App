@@ -11,12 +11,11 @@ export class AddContactButton extends React.Component {
         super(props);
         this.toggleForm = this.toggleForm.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleCancel = this.handleCancel.bind(this);
     }
 
-    handleCancel() {
+    toggleForm() {
         this.setState({
-            isShowForm: false,
+            isShowForm: !this.state.isShowForm,
         })
     }
 
@@ -27,7 +26,7 @@ export class AddContactButton extends React.Component {
     render() {
         const {isShowForm} = this.state;
 
-        const form = isShowForm && <Form onFormSubmit={this.handleSubmit} onFormCancel={this.handleCancel} />
+        const form = isShowForm && <Form onFormSubmit={this.handleSubmit} onFormCancel={this.toggleForm} />
 
         return (
             <Fragment>
@@ -37,11 +36,5 @@ export class AddContactButton extends React.Component {
                 {form}
             </Fragment>
         );
-    }
-
-    toggleForm() {
-        this.setState({
-            isShowForm: !this.state.isShowForm,
-        })
     }
 }
